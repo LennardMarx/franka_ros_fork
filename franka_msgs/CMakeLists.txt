@@ -6,6 +6,7 @@ find_package(catkin REQUIRED COMPONENTS message_generation std_msgs sensor_msgs 
 add_message_files(FILES Errors.msg FrankaState.msg)
 
 add_service_files(FILES
+  StringService.srv
   SetCartesianImpedance.srv
   SetEEFrame.srv
   SetForceTorqueCollisionBehavior.srv

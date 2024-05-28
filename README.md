@@ -17,6 +17,17 @@ roslaunch ros_tcp_endpoint endpoint.launch
 ```
 
 ## Launch controllers 
+Working with Gazebo:
+- cartesian impedance
+- joint position
+- joint velocity
+- force (affected by gravity?) -> not working like on physical robot
+- model (what ever this does?) -> show gravity term, jacobian, etc.
+
+Not working due to missing franka_hw::FrankPoseCartesianInterface:
+- cartesian pose
+- elbow
+- joint impedance
 
 To work with gazebo simply launch gazebo in another terminal first, then launch edited controller script excluding the include parameter for the physical robot:
 ```xml
