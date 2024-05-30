@@ -1,4 +1,0 @@
-<?xml version="1.0" ?>
-<launch>
-  <rosparam file="$(find franka_example_controllers)/config/_controller_groups.yaml" command="load" />
-</launch>
